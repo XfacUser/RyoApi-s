@@ -11,12 +11,12 @@
   },
   "links": [
     {
-      "name": "Source Code",
-      "url": "https://github.com/rynxzyy/Rynn-UI"
+      "name": "Github Owner",
+      "url": "https://github.com/XfacUser"
     },
     {
       "name": "Contact Me",
-      "url": "wa.me/6283851294680"
+      "url": "https://whatsapp.com/channel/0029VaBOlsv002TEjlntTE2D"
     }
   ],
   "categories": [
@@ -190,6 +190,16 @@
           "desc": "Random pap ayang",
           "path": "/random/papayang"
         }                       
+      ]
+    },
+    {
+      "name": "Cerita",
+      "items": [
+         {
+          "name": "KisahNabi",
+          "desc": "The Story of Prophet Naw",
+          "path": "/cerita/kisahnabi?text="
+            }                       
       ]
     },
     {

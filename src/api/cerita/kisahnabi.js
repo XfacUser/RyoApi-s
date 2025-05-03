@@ -1,0 +1,27 @@
+const fs = require('fs');
+
+module.exports = function(app) {
+const Searchnabi = (nabi) => {
+   return new Promise( async (resolve, reject) => {
+       const scraper = JSON.parse(fs.readFileSync(__path +`/data/kisahNabi/${nabi}.json`))
+       console.log(scraper)
+app.get('/cerita/kisahnabi', async (req, res) => {
+       const { q } = req.query
+        try {
+       const result = {
+         name: scraper.name,
+         kelahiran: scraper.thn_kelahiran +' sebelum massehi',
+         wafat_usia: scraper.usia +' tahun',
+         singgah: scraper.tmp,
+         thumb: scraper.img_url,
+         kisah: scraper.description
+           }            
+            res.status(200).json({
+                status: true,
+                result: results
+            });
+        } catch (error) {
+            res.status(500).send(`Error: ${error.message}`);
+        }
+});
+}
